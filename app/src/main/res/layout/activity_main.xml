@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.demo.baiduditu.SlideBottomPanel.SlideBottomPanel
+        android:id="@+id/sbv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sbp_background_layout="@layout/background_layout"
+        app:sbp_title_height_no_display="55dp">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+
+                <ImageView
+                    android:id="@+id/button1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/blank"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/colorAccent"/>
+
+                <ImageView
+                    android:id="@+id/button2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/blank"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/button1"
+                    android:layout_marginLeft="20dp"
+                    android:background="#000000"/>
+
+                <ImageView
+                    android:id="@+id/button3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/blank"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/button2"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/colorPrimary"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <ImageView
+                    android:id="@+id/iv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/hello_world"
+                    android:src="@android:drawable/ic_menu_edit" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="26dp"
+                    android:layout_toRightOf="@+id/iv_1"
+                    android:contentDescription="@string/hello_world"
+                    android:src="@android:drawable/ic_menu_share" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/hello_world"
+                    android:src="@android:drawable/ic_menu_compass" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </com.demo.baiduditu.SlideBottomPanel.SlideBottomPanel>
+
+</LinearLayout>
